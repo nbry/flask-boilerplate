@@ -52,12 +52,15 @@ By default, Flask runs on port 5000 on localhost. Try testing the `/ping` route 
 - Python virtual environments
 
 #### Optional:
-- RDBMS - This boilerplate is tested with PostgreSQL. Using with this with a database will require additional set up.
+- Relational Database - This boilerplate is tested with PostgreSQL. Using with this with a database will require additional set up.
 
 ------------
 
 #### Set up with a database:
-This project is designed to work with PostgreSQL, or any RDBMS that is compatible with SQL Alchemy. Project has database related code commented out by default. Additional set up is required (which I will outline at future date). Search for comments throughout the project that say "USE THE FOLLOWING IF SETTING UP PROJECT WITH A DATABASE".
+This project is designed to work with PostgreSQL, or any Relational Database that is compatible with SQL Alchemy. The project has database-related code commented out by default. Additional set up is required (which I will outline at a future date). Search for comments throughout the project that say "USE THE FOLLOWING IF SETTING UP PROJECT WITH A DATABASE".
 
 #### Set up without a database:
-If you don't need to set up a project with a database, you can delete all commented-out code under the caption: "USE THE FOLLOWING IF SETTING UP PROJECT WITH A DATABASE". You can also delete the models directory entirely. 
+If you don't need to set up a project with a database: you can 
+- You can delete all commented-out code under the caption: "USE THE FOLLOWING IF SETTING UP PROJECT WITH A DATABASE".
+- You can also delete the models directory.
+- You can delete seed.py.
