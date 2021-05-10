@@ -4,13 +4,13 @@ An opinionated boilerplate and set up for a Flask REST API project. I have perso
 
 P.S.  I will be making updates over time. 
 
-### Using my boilerplate might be good for you IF:
+### My boilerplate & set up may be useful to you IF:
 - Your Flask projects normally have an enormous, monolithic `app.py` file.
 - You're looking for opinions on project organization and modularity.
 - You're looking to bootstrap a REST API project for a personal project or coding challenge.
 - You're looking to play around with a ready-to-go Flask application.
 - You want to try out Pytest, an extremely simple and expressive testing library.
-- You want to try your hand in a configurations-based programming.
+- You want to try your hand in at configurations-based programming.
 - You want to see an example of a factory pattern.
 - You want to learn how to set up a basic testing fixture.
 
