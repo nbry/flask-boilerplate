@@ -1,3 +1,8 @@
+"""
+Testing factory pattern function: create_app()
+and the default ping route.
+"""
+
 from project import create_app
 
 
