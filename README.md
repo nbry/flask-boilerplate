@@ -1,6 +1,6 @@
-# My Flask Project Boilerplate
+# My Flask REST API Boilerplate and Set Up
 
-An opinionated boilerplate for a Flask REST API project. I have personally used this set up to bootstrap Flask projects extremely quickly. This project can be used by anyone. It is absolutely FOSS.
+An opinionated boilerplate and set up for a Flask REST API project. I have personally used this set up to bootstrap Flask projects extremely quickly. This project can be used by anyone, and it is absolutely FOSS.
 
 P.S.  I will be making updates over time. 
 
@@ -32,6 +32,8 @@ P.S.  I will be making updates over time.
 4. Install dependencies - `pip install -r requirements.txt`
 5. Set to development - `export FLASK_ENV=development`
 6. Run the app - `flask run`
+
+By default, Flask runs on port 5000 on localhost. Try testing the `/ping` route to see if it's running!
 
 ## Installation Requirements
 #### Necessary:
