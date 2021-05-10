@@ -1,7 +1,10 @@
 from flask import Flask
 
 # Blueprints (for routes)
-from project.routes import general_api_blueprint
+from project.routes import all_blueprints
+
+# Extensions (MANUAL ADDITIONS HERE)
+from project.all_extensions import db
 
 
 # *****************************
@@ -25,12 +28,28 @@ def create_app(config_file=None):
 
 
 # *****************************
+# INITIALIZING EXTENSIONS
+# *****************************
+
+def initialize_extensions(app):
+    """
+    Pass Flask extensions to an instantiated Flask app.
+    """
+
+    db.init_app(app)
+
+
+# *****************************
 # REGISTERING BLUEPRINTS
 # *****************************
 def register_blueprints(app):
     """
     Register all blueprints to an instantiated Flask application.
-    NOTE!! This function must be updated if new blueprints are to be implemented!!
+
+    NOTE!! ENSURE project/routes/__init__.py is set up correctly!
+    All your blueprints must be imported into that file and put in a
+    list named all_blueprints.
     """
 
-    app.register_blueprint(general_api_blueprint)
+    for blueprint in all_blueprints:
+        app.register_blueprint(blueprint)

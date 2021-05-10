@@ -1,7 +1,10 @@
-from flask import Blueprint
+"""
+IMPORTANT: FOLLOW THESE DIRECTIONS:
 
-# List Blueprints Here:
-general_api_blueprint = Blueprint('general_api', __name__)
+1. Import all route blueprints into this file.
+2. Put blueprint in a list called all_blueprints.
+"""
 
-# THIS LINE MUST BE BELOW BLUEPRINTS TO PROVIDE CONTEXT TO ROUTE FILES:
-from project.routes import general_routes
+from project.routes.general_routes import general_api_blueprint
+
+all_blueprints = [general_api_blueprint]
