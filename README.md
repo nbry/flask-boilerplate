@@ -1,9 +1,6 @@
 # My Flask REST API Boilerplate and Set Up
 
-An opinionated boilerplate and set up for a Flask REST API project. I have personally used this set up to bootstrap Flask projects extremely quickly. This project can be used by anyone, and it is absolutely FOSS.
-
-P.S.  I will be making updates over time. 
-
+An opinionated boilerplate and set up for a Flask REST API project. I have personally used this set up to bootstrap Flask projects extremely quickly. Please feel free to use it!
 
 ------------
 
