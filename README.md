@@ -4,6 +4,9 @@ An opinionated boilerplate and set up for a Flask REST API project. I have perso
 
 P.S.  I will be making updates over time. 
 
+
+------------
+
 ### My boilerplate & set up may be useful to you IF:
 - Your Flask projects normally have an enormous, monolithic `app.py` file.
 - You're looking for opinions on project organization and modularity.
@@ -14,11 +17,16 @@ P.S.  I will be making updates over time.
 - You want to see an example of a factory pattern.
 - You want to learn how to set up a basic testing fixture.
 
+
+------------
+
 ## Project Features
 
 #### Separation of concerns:
 - Separate directories for routes, tests, models, and helpers.
-- Application factory - For ease of feeding different sets of configurations (.cfg files). Check it all out in /project/__init__.py
+- Application factory pattern - For ease of feeding different sets of configurations (.cfg files) and setting up testing fixtures. Check it all out in /project/__init__.py
+- Using Flask blueprints to separate groups of routes.
+- Utilzing helper classes to abstract heavy logic from the routes (with a provided example).
 
 #### Initial testing configurations:
 - Testing with Pytest - For clear, expressive testing.
@@ -35,6 +43,8 @@ P.S.  I will be making updates over time.
 
 By default, Flask runs on port 5000 on localhost. Try testing the `/ping` route to see if it's running!
 
+------------
+
 ## Installation Requirements
 #### Necessary:
 - Python 3
@@ -45,8 +55,6 @@ By default, Flask runs on port 5000 on localhost. Try testing the `/ping` route 
 - RDBMS - This boilerplate is tested with PostgreSQL. Using with this with a database will require additional set up.
 
 ------------
-
-
 
 #### Set up with a database:
 This project is designed to work with PostgreSQL, or any RDBMS that is compatible with SQL Alchemy. Project has database related code commented out by default. Additional set up is required (which I will outline at future date). Search for comments throughout the project that say "USE THE FOLLOWING IF SETTING UP PROJECT WITH A DATABASE".
