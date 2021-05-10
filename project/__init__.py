@@ -3,8 +3,9 @@ from flask import Flask
 # Blueprints (for routes)
 from project.routes import all_blueprints
 
-# Extensions (MANUAL ADDITIONS HERE)
-from project.all_extensions import db
+# # Extensions (MANUAL ADDITIONS HERE)
+# # [USE THE FOLLOWING IF SETTING UP PROJECT WITH A DATABASE]:
+# from project.all_extensions import db
 
 
 # *****************************
@@ -24,19 +25,23 @@ def create_app(config_file=None):
     # Bind blueprints
     register_blueprints(app)
 
+    # # Initialize extensions and link to app
+    # # [USE THE FOLLOWING IF SETTING UP PROJECT WITH A DATABASE]:
+    #  initialize_extensions(app)
+
     return app
 
 
 # *****************************
 # INITIALIZING EXTENSIONS
 # *****************************
+# # [USE THE FOLLOWING IF SETTING UP PROJECT WITH A DATABASE]:
+# def initialize_extensions(app):
+#     """
+#     Pass Flask extensions to an instantiated Flask app.
+#     """
 
-def initialize_extensions(app):
-    """
-    Pass Flask extensions to an instantiated Flask app.
-    """
-
-    db.init_app(app)
+#     db.init_app(app)
 
 
 # *****************************

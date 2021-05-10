@@ -16,8 +16,8 @@ INSTRUCTIONS FOR USING A NEW EXTENSION:
 3. Find the initialize_extensions() method
 4. Write corresponding logic to initialize
 """
+# # [USE THE FOLLOWING IF SETTING UP PROJECT WITH A DATABASE]:
+# from flask_sqlalchemy import SQLAlchemy
 
-from flask_sqlalchemy import SQLAlchemy
-
-# INSTANCES:
-db = SQLAlchemy()
+# # INSTANCES:
+# db = SQLAlchemy()
