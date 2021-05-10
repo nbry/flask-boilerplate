@@ -56,7 +56,7 @@ By default, Flask runs on port 5000 on localhost. Try testing the `/ping` route 
 ## Set Up Notes
 
 #### Set up with a database:
-This project is designed to work with PostgreSQL, or any Relational Database that is compatible with SQL Alchemy. The project has database-related code commented out by default. Additional set up is required (which I will outline at a future date). Search for comments throughout the project that say "USE THE FOLLOWING IF SETTING UP PROJECT WITH A DATABASE".
+This project is designed to work with PostgreSQL, or any Relational Database that is compatible with SQL Alchemy. However, the project has database-related code commented out by default. Additional set up is required (which I will outline at a future date). Search for comments throughout the project that say "USE THE FOLLOWING IF SETTING UP PROJECT WITH A DATABASE".
 
 #### Set up without a database:
 If you don't need to set up a project with a database:
@@ -69,4 +69,5 @@ If you don't need to set up a project with a database:
 ## For the Future
 - Containerization (Docker)
 - Pipenv support
+- Database set up instructions
 - A better README...
